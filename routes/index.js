@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/getSvg', function(req, res, next) {
   const uid= uuid.v1()
-  let svgCode = multiavatar(uid)
+  var svgCode = multiavatar(uid)
   res.json({"svg":svgCode});
 });
 
